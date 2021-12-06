@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "549770476252",
+    "project_id": "theiaprototype",
+    "storage_bucket": "theiaprototype.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:549770476252:android:a40b45e30a3c4b43b19219",
+        "android_client_info": {
+          "package_name": "com.example.theiaprototype"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "549770476252-jm68l737p1knp00g34n18hmm6pivhb2o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1b2oERU2bj5z8GiH6s607UlbmvIA4lcY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "549770476252-jm68l737p1knp00g34n18hmm6pivhb2o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
