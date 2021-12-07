@@ -1,6 +1,7 @@
 package com.example.theiaprototype;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder> {
@@ -33,6 +35,17 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.destination.setText(destinations[position]);
         holder.description.setText(destination_descriptions[position]);
+
+        holder.mainLayout.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, DestinationViewActivity.class);
+                intent.putExtra("destinations", destinations[position]);
+                intent.putExtra("destination_descriptions", destination_descriptions[position]);
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -43,11 +56,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
         TextView destination, description;
+        ConstraintLayout mainLayout;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             destination = itemView.findViewById(R.id.destination);
             description = itemView.findViewById(R.id.description);
+            mainLayout = itemView.findViewById(R.id.mainLayout);
         }
     }
 }

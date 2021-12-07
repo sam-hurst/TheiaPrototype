@@ -5,12 +5,14 @@
         <item>Office 103</item>
         <item>Bathroom</item>
         <item>Stairwell</item>
+        <item>Exit</item>
     </string-array>
 
     <string-array name="destination_descriptions">
-        <item>Description</item>
-        <item>Description</item>
-        <item>Description</item>
-        <item>Description</item>
+        <item>Select to navigate to Office 101</item>
+        <item>Select to navigate to Office 103</item>
+        <item>Select to navigate to Bathroom</item>
+        <item>Select to navigate to Stairwell</item>
+        <item>Select to navigate to Exit</item>
     </string-array>
 </resources>
