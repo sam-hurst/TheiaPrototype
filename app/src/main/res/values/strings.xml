@@ -1,6 +1,16 @@
 <resources>
     <string name="app_name">TheiaPrototype</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string-array name="destinations">
+        <item>Office 101</item>
+        <item>Office 103</item>
+        <item>Bathroom</item>
+        <item>Stairwell</item>
+    </string-array>
+
+    <string-array name="destination_descriptions">
+        <item>Description</item>
+        <item>Description</item>
+        <item>Description</item>
+        <item>Description</item>
+    </string-array>
 </resources>
