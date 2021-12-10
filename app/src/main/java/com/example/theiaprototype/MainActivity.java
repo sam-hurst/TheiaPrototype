@@ -1,8 +1,6 @@
 package com.example.theiaprototype;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -26,10 +24,5 @@ public class MainActivity extends AppCompatActivity {
         RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(this, destinations, destination_descriptions);
         recyclerView.setAdapter(recyclerViewAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-    }
-
-    public void logout(View view){
-        startActivity(new Intent(getApplicationContext(),Login.class));
-        finish();
     }
 }

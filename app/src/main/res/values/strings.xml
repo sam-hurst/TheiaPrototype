@@ -4,7 +4,7 @@
         <item>Office 101</item>
         <item>Office 103</item>
         <item>Bathroom</item>
-        <item>Stairwell</item>
+        <item>Floor 1 Elevator</item>
         <item>Exit</item>
     </string-array>
 
@@ -12,7 +12,14 @@
         <item>Select to navigate to Office 101</item>
         <item>Select to navigate to Office 103</item>
         <item>Select to navigate to Bathroom</item>
-        <item>Select to navigate to Stairwell</item>
+        <item>Select to navigate to Floor 1 Elevator</item>
         <item>Select to navigate to Exit</item>
+    </string-array>
+
+    <string-array name="steps">
+        <item>Walk forward for 20 steps.</item>
+        <item>Turn left and go forward 10 steps.</item>
+        <item>Turn right.</item>
+        <item>You have arrived at your destination.</item>
     </string-array>
 </resources>

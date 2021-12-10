@@ -10,7 +10,7 @@ public class DestinationViewActivity extends AppCompatActivity {
 
     TextView destination, description;
 
-    String destinations, destination_descriptions;
+    String destinations, destination_descriptions, steps[];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,10 +32,11 @@ public class DestinationViewActivity extends AppCompatActivity {
         else {
             Toast.makeText(this, "Error ! no data", Toast.LENGTH_SHORT).show();
         }
+        steps = getResources().getStringArray(R.array.steps);
     }
 
     private void setData() {
-        destination.setText(destinations);
+        destination.setText("Navigating to " + destinations);
         description.setText(destination_descriptions);
     }
 }
